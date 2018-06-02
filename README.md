@@ -12,11 +12,15 @@ On new MacBooks with TouchBar, when you open a media app an extra button for med
 2. In most of the cases you only need to **double click on 'Start NowPlayingTouchUI'** to start 'nowPlayingTouchUI' service but if the service is already running and you are having problem, run **'Restart NowPlayingTouchUI' and then 'Start NowPlayingTouchUI'**.
 
 ## Automator Code
-#####Start NowPlayingTouchUI
+##### Start NowPlayingTouchUI
 ```applescript
-tell application "NowPlayingTouchUI"	activateend tell
+tell application "NowPlayingTouchUI"
+	activate
+end tell
 ```
-#####Restart NowPlayingTouchUI
+##### Restart NowPlayingTouchUI
 ```applescript
-tell application "NowPlayingTouchUI"	quitend tell
+tell application "NowPlayingTouchUI"
+	quit
+end tell
 ```
